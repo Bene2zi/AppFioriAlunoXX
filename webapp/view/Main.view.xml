@@ -108,8 +108,7 @@
 		</f:content>
 		<f:footer>
 			<OverflowToolbar id="_IDGenOverflowToolbar1">
-				<Button id="_IDGenButton1" icon="sap-icon://alert" text="{= ${oMessage>/}.length }" visible="{= ${oMessage>/}.length > 0 }" type="Attention"
-					press="onMessagePopoverPress"/>
+				<Button id="_IDGenButton1" icon="sap-icon://alert" text="{= ${oMessage>/}.length }" visible="{= ${oMessage>/}.length > 0 }" press="onMessagePopoverPress"/>
 				<ToolbarSpacer id="_IDGenToolbarSpacer2"/>
 				<Button id="_IDGenButton2" type="Accept" text="{i18n>gravar}" press="onSave" enabled="{= ${oCadastroModel>/CadastroSet}.length || ${oCadastroModel>/aExcluded}.length ? true : false}"/>
 				<Button id="_IDGenButton3" type="Reject" text="{i18n>cancelar}" press="onCancel"/>

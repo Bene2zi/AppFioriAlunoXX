@@ -47,5 +47,31 @@ sap.ui.define([
                 //this.getOwnerComponent().getModel('oCadastroModel').updateBindings(true)
             },
 
+            onAdd : function(oEvent){
+
+                this._dialogBaixaEstoque = sap.ui.xmlfragment("view.Cadastro", this)
+    			if (this.getView().$().closest(".sapUiSizeCompact").length > 0){
+    				this._dialogBaixaEstoque.addStyleClass("sapUiSizeCompact") 
+    			} else { 
+    				this._dialogBaixaEstoque.addStyleClass("sapUiSizeCozy")
+    			}
+            	
+            	this.getView().addDependent(this._dialogBaixaEstoque)
+            	
+            	this._dialogBaixaEstoque.open()
+            },
+
+            onConfirmar : function(oEvent){
+
+            },
+
+            onCancelar : function(oEvent){
+
+            },
+
+            onAfterClose : function(oEvent){
+                
+            }
+
         });
     });
