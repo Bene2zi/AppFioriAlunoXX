@@ -56,7 +56,7 @@
           "bundleName": "AppFioriAlunoXX.appfiorialunoxx.i18n.i18n"
         }
       },
-      "": {
+      "oCadastroModel": {
         "dataSource": "mainService",
         "preload": true,
         "settings": {}
