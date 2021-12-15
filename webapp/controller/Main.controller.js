@@ -9,7 +9,7 @@ sap.ui.define([
 
         return Controller.extend("AppFioriAlunoXX.appfiorialunoxx.controller.Main", {
             onInit: function () {
-
+                    /* Teste */
             }
         });
     });
