@@ -34,37 +34,40 @@
 												
 						<f:FormElement id="_IDGenFormElement2" label="{i18n>cpf}">
 							<f:fields> 
-								<Input id="_IDGenInput2" value="{oCadastroModelLine>/Cpf}" width="50%"/>
+								<Input id="_IDGenInput2" value="{oCadastroModelLine>/Cpf}"  />
 							</f:fields>
 						</f:FormElement>
 						
 						<f:FormElement id="_IDGenFormElement3" label="{i18n>nome}">
 							<f:fields>
-								<Input id="_IDGenInput3"  value="{oCadastroModelLine>/Nome}" width="50%"/>
+								<Input id="_IDGenInput3"  value="{oCadastroModelLine>/Nome}"  />
 							</f:fields>
 						</f:FormElement>
 						 
-						<f:FormElement id="_IDGenFormElement4" label="{i18n>Sobrenome}">
+						<f:FormElement id="_IDGenFormElement4" label="{i18n>sobrenome}">
 							<f:fields> 
-								<Input id="_IDGenInput4"  value="{oCadastroModelLine>/Sobrenome}" width="50%"/>
+								<Input id="_IDGenInput4"  value="{oCadastroModelLine>/Sobrenome}"  />
 							</f:fields>
 						</f:FormElement>
 
 						<f:FormElement id="_IDGenFormElement5" label="{i18n>datanasc}">
 							<f:fields>
-								<Input id="_IDGenInput1" value="{oCadastroModelLine>/DataNascimento}" width="50%"/>
+                                <DatePicker id="_IDGenDatePicker1" displayFormat="dd/MM/yyyy" 
+                                                valueFormat="yyyyMMdd"
+										        dateValue="{path: 'oCadastroModelLine>/DataNascimento',formatOptions: {pattern: 'yyyyMMdd', UTC: true}}" 
+                                                placeholder="{i18n>datanasc}" />
 							</f:fields>
 						</f:FormElement>
 
 						<f:FormElement id="_IDGenFormElement6" label="{i18n>email}">
 							<f:fields>
-								  <Input id="_IDGenInput5" value="{oCadastroModelLine>/Email}" width="50%"/>
+								  <Input id="_IDGenInput5" value="{oCadastroModelLine>/Email}"  />
 							</f:fields>
 						</f:FormElement>
 						
 						<f:FormElement id="_IDGenFormElement7" label="{i18n>telefone}">
 							<f:fields>
-								<Input id="_IDGenInput6" value="{oCadastroModelLine>/Telefone}" width="50%"/>
+                                <Input id="_IDGenInput6" value="{path:'oCadastroModelLine>/Telefone', type:'sap.ui.model.type.Integer'}"/>
 							</f:fields>
 						</f:FormElement>
 					</f:formElements>

@@ -57,7 +57,7 @@
 		</f:header>
 		<!-- DynamicPage Content -->
 		<f:content>
-			<Table id="idCadastroTable" inset="false" items="{oCadastroModel>/CadastroSet}" mode="MultiSelect">
+			<Table id="idCadastroTable" inset="false" items="{oCadastroModel>/CadastroSet}" mode="SingleSelectLeft">
 				<headerToolbar>
 					<OverflowToolbar id="otbSubheader">
 						<Title id="_IDGenTitle1" text="{i18n>tabtitle}({= ${oCadastroModel>/CadastroSet}.length})" level="H2"/>
